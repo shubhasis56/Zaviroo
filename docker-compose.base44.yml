@@ -1,0 +1,42 @@
+services:
+  backend:
+    image: node:22
+    working_dir: /app/backend
+    volumes:
+      - ./backend:/app/backend
+    command: sh -c "npm install && exec npx nodemon server.js"
+    environment:
+      - PORT=8000
+    ports:
+      - "8000:8000"
+    restart: on-failure
+    healthcheck:
+      test: ["CMD", "node", "-e", "require('http').get('http://localhost:8000/api/health', r => { let d=''; r.on('data', c => d+=c); r.on('end', () => process.exit(d.includes('ok') ? 0 : 1)); }).on('error', () => process.exit(1))"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 15s
+
+  frontend:
+    image: node:22
+    working_dir: /app/frontend
+    volumes:
+      - ./frontend:/app/frontend
+    command: sh -c "npm install && exec npx vite --host 0.0.0.0 --port 5173"
+    ports:
+      - "3000:5173"
+    depends_on:
+      backend:
+        condition: service_healthy
+    environment:
+      - BASE44_PREVIEW_MODE=1
+      - BASE44_PUBLIC_HOST_SUFFIX
+      - BASE44_SANDBOX_HOST_DOMAIN
+      - __VITE_ADDITIONAL_SERVER_ALLOWED_HOSTS
+    restart: on-failure
+    healthcheck:
+      test: ["CMD", "node", "-e", "require('http').get('http://localhost:5173', r => process.exit(r.statusCode === 200 ? 0 : 1)).on('error', () => process.exit(1))"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s

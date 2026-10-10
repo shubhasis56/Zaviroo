@@ -1,0 +1,14 @@
+[
+  { "id": 1, "title": "Midnight Drive", "artist": "The Wanderers", "album": "Neon Nights", "genre": "Electronic", "audioUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3", "gradient": "linear-gradient(135deg, #667eea, #764ba2)" },
+  { "id": 2, "title": "Ocean Eyes", "artist": "Luna Wave", "album": "Coastal Dreams", "genre": "Indie", "audioUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3", "gradient": "linear-gradient(135deg, #f093fb, #f5576c)" },
+  { "id": 3, "title": "Electric Pulse", "artist": "Synth Masters", "album": "Digital Horizon", "genre": "Electronic", "audioUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3", "gradient": "linear-gradient(135deg, #4facfe, #00f2fe)" },
+  { "id": 4, "title": "Coffee Shop Jazz", "artist": "The Smooth Quartet", "album": "Late Nights", "genre": "Jazz", "audioUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3", "gradient": "linear-gradient(135deg, #43e97b, #38f9d7)" },
+  { "id": 5, "title": "Mountain High", "artist": "Alpine Echo", "album": "Peaks & Valleys", "genre": "Indie", "audioUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3", "gradient": "linear-gradient(135deg, #fa709a, #fee140)" },
+  { "id": 6, "title": "City Lights", "artist": "Urban Pulse", "album": "Metropolis", "genre": "Electronic", "audioUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3", "gradient": "linear-gradient(135deg, #a18cd1, #fbc2eb)" },
+  { "id": 7, "title": "Summer Rain", "artist": "The Drifters", "album": "Seasonal", "genre": "Indie", "audioUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-7.mp3", "gradient": "linear-gradient(135deg, #ff9a9e, #fecfef)" },
+  { "id": 8, "title": "Deep Focus", "artist": "Ambient Collective", "album": "Concentration", "genre": "Ambient", "audioUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3", "gradient": "linear-gradient(135deg, #2af598, #009efd)" },
+  { "id": 9, "title": "Dance Floor", "artist": "Beat Makers", "album": "Club Nights", "genre": "Electronic", "audioUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-9.mp3", "gradient": "linear-gradient(135deg, #ee0979, #ff6a00)" },
+  { "id": 10, "title": "Velvet Sunset", "artist": "The Jazz Trio", "album": "Evening Sessions", "genre": "Jazz", "audioUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-10.mp3", "gradient": "linear-gradient(135deg, #30cfd0, #330867)" },
+  { "id": 11, "title": "Northern Lights", "artist": "Arctic Sound", "album": "Polar", "genre": "Ambient", "audioUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-11.mp3", "gradient": "linear-gradient(135deg, #0ba360, #3cba92)" },
+  { "id": 12, "title": "Retro Wave", "artist": "Synthwave Kids", "album": "Nostalgia", "genre": "Electronic", "audioUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-12.mp3", "gradient": "linear-gradient(135deg, #ff0844, #ffb199)" }
+]
